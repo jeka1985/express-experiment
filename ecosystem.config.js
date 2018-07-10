@@ -12,8 +12,8 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'developer',
-      key: '/Users/evgeniyyemelin/.ssh/digitocean.pub',
+      user : 'root',
+      key: '/Users/evgeniyyemelin/.ssh/digitocean',
       host : '178.62.218.228',
       ref  : 'origin/master',
       repo : 'git@bitbucket.org:eyemelin/my-express-deploy-exp.git',

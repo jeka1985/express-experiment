@@ -15,8 +15,8 @@ module.exports = {
       user : 'root',
       ssh_options: "StrictHostKeyChecking=no",
       key: '~/.ssh/digitocean.pub',
-      host : '178.62.218.228',
-      ref  : 'origin/master',
+      host : 'localhost',
+      ref  : 'master',
       repo : 'git@bitbucket.org:eyemelin/my-express-deploy-exp.git',
       path : '/var/www/production',
       'post-deploy' : 'npm install && npm start --env production'

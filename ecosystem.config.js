@@ -18,7 +18,7 @@ module.exports = {
       host : 'localhost',
       ref  : 'master',
       repo : 'git@bitbucket.org:eyemelin/my-express-deploy-exp.git',
-      path : '/var/www/production',
+      path : './test',
       'post-deploy' : 'npm install && npm start --env production'
     }
   }

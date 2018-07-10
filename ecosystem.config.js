@@ -14,12 +14,12 @@ module.exports = {
     production : {
       user : 'root',
       ssh_options: "StrictHostKeyChecking=no",
-      key: '/Users/evgeniyyemelin/.ssh/digitocean.pub',
+      key: '~/.ssh/digitocean.pub',
       host : '178.62.218.228',
       ref  : 'origin/master',
       repo : 'git@bitbucket.org:eyemelin/my-express-deploy-exp.git',
       path : '/var/www/production',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'npm install && npm start --env production'
     }
   }
 };

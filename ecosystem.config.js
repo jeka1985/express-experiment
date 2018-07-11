@@ -15,10 +15,10 @@ module.exports = {
       user : 'root',
       ssh_options: "StrictHostKeyChecking=no",
       key: '~/.ssh/digitocean.pub',
-      host : 'localhost',
+      host : '178.62.218.228',
       ref  : 'origin/master',
       repo : 'git@github.com:jeka1985/express-experiment.git',
-      path : './test',
+      path : '/var/www/production',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
   }

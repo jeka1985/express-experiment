@@ -12,7 +12,7 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'root',
+      user : 'evgeniyyemelin',
       ssh_options: "StrictHostKeyChecking=no",
       key: '~/.ssh/digitocean.pub',
       host : '178.62.218.228',

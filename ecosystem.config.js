@@ -14,7 +14,7 @@ module.exports = {
     production : {
       user : 'root',
       ssh_options: "StrictHostKeyChecking=no",
-      key: '~/.ssh/authorized_keys',
+      key: '~/.ssh/digitalocean.pub',
       host : '178.62.195.88',
       ref  : 'origin/master',
       repo : 'git@github.com:jeka1985/express-experiment.git',

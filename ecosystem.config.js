@@ -17,7 +17,7 @@ module.exports = {
       key: '~/.ssh/digitocean.pub',
       host : 'localhost',
       ref  : 'origin/master',
-      repo : 'git@bitbucket.org:eyemelin/my-express-deploy-exp.git',
+      repo : 'git@github.com:jeka1985/express-experiment.git',
       path : './test',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }

@@ -12,10 +12,10 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'evgeniyyemelin',
+      user : 'deployer',
       ssh_options: "StrictHostKeyChecking=no",
-      key: '~/.ssh/digitocean.pub',
-      host : '178.62.218.228',
+      key: '~/.ssh/do-deployer.pub',
+      host : '178.62.195.88',
       ref  : 'origin/master',
       repo : 'git@github.com:jeka1985/express-experiment.git',
       path : '/var/www/production',

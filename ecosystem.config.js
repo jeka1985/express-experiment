@@ -14,7 +14,7 @@ module.exports = {
     production : {
       user : 'root',
       ssh_options: "StrictHostKeyChecking=no",
-      key: '~/.ssh/do-deployer.pub',
+      key: '~/.ssh/authorized_keys',
       host : '178.62.195.88',
       ref  : 'origin/master',
       repo : 'git@github.com:jeka1985/express-experiment.git',

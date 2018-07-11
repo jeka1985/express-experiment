@@ -12,7 +12,7 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'deployer',
+      user : 'root',
       ssh_options: "StrictHostKeyChecking=no",
       key: '~/.ssh/do-deployer.pub',
       host : '178.62.195.88',

@@ -12,12 +12,11 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'root',
-      ssh_options: "StrictHostKeyChecking=no",
-      key: '~/.ssh/digitalocean.pub',
+      user : 'deployer',
+      ssh_options: "ForwardAgent=yes",
       host : '178.62.195.88',
       ref  : 'origin/master',
-      repo : 'git@github.com:jeka1985/express-experiment.git',
+      repo : 'git@repo:jeka1985/express-experiment.git',
       path : '/var/www/production',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
